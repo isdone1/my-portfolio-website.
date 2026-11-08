@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop iPhones | GLORD GADGETS</title>
+    <meta name="description" content="Browse iPhone models at GLORD GADGETS, filter the collection, and order by WhatsApp.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">GLORD <span>GADGETS</span></a>
+        <button id="menu" class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="phones.html" aria-current="page">Phones</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="catalogue-heading">
+            <p class="eyebrow">THE GLORD GADGETS COLLECTION</p>
+            <h1>Find your <em>iPhone.</em></h1>
+            <p>Compare the model families, search for a specific iPhone, then message us to confirm the exact price, condition, and availability.</p>
+            <div class="catalogue-points" aria-label="Shopping details">
+                <span>Classic to latest models</span>
+                <span>Price confirmed before purchase</span>
+                <span>Direct WhatsApp support</span>
+            </div>
+        </section>
+        <section class="shop-section catalogue-section" aria-label="iPhone catalogue">
+            <div class="catalogue-toolbar">
+                <div>
+                    <p class="eyebrow">EXPLORE THE LINEUP</p>
+                    <h2>Choose your series</h2>
+                </div>
+                <p>Prices and stock can change. Contact us to confirm the details for your chosen device.</p>
+            </div>
+            <div class="filters">
+                <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search iPhone model..." aria-label="Search iPhone model"></label>
+                <select id="filter" aria-label="Filter models">
+                    <option value="all">All models</option><option value="classic">Classic</option><option value="x">X Series</option>
+                    <option value="11">iPhone 11</option><option value="12">iPhone 12</option><option value="13">iPhone 13</option>
+                    <option value="14">iPhone 14</option><option value="15">iPhone 15</option><option value="16">iPhone 16</option><option value="17">iPhone 17</option>
+                </select>
+            </div>
+            <p id="result-count" class="result-count" aria-live="polite"></p>
+            <div id="products" class="products"></div>
+        </section>
+    </main>
+    <footer><a class="logo" href="index.html">GLORD <span>GADGETS</span></a><span>© 2026 GLORD GADGETS. All rights reserved.</span></footer>
+    <script src="script.js"></script>
+</body>
+</html>

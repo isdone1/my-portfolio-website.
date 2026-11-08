@@ -1,82 +1,52 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | ISDONE WEB</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact GLORD GADGETS</title>
+    <meta name="description" content="Contact GLORD GADGETS on WhatsApp to ask about iPhone prices, storage, and availability.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <div class="brand-icon">N</div>
-      <div>
-        <div class="brand-name">ISDONE<span>WEB</span></div>
-        <div class="tagline">DESIGN / DEVELOP</div>
-      </div>
-    </div>
-
-    <button class="menu" id="menuButton" aria-label="Open menu" aria-expanded="false">
-      <i></i><i></i><i></i>
-    </button>
-  </header>
-
-  <nav id="mobileNav" class="mobile-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="result.html">Work</a>
-    <a href="features.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <main class="page-shell">
-    <section class="page-hero">
-      <p class="section-label">CONTACT</p>
-      <h1>Let’s build something <span>great together.</span></h1>
-      <p>
-        If you need a website that looks professional, feels polished, and helps your business stand out, ISDONE WEB is ready to help.
-      </p>
-    </section>
-
-    <section class="contact-panel">
-      <form class="contact-form" action="https://formsubmit.co/ndukweisdone@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Portfolio enquiry from website">
-
-        <div class="form-row">
-          <label for="name">FULL NAME</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
-        </div>
-
-        <div class="form-row">
-          <label for="email">EMAIL ADDRESS</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        </div>
-
-        <div class="form-row">
-          <label for="project">PROJECT TYPE</label>
-          <select id="project" name="project" required>
-            <option value="">Select project type</option>
-            <option>Portfolio Website</option>
-            <option>Business Website</option>
-            <option>Landing Page</option>
-            <option>Brand Design</option>
-          </select>
-        </div>
-
-        <div class="form-row">
-          <label for="message">PROJECT DETAILS</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea, goals, and what you want the website to do..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn primary submit-btn">SEND ENQUIRY <span>→</span></button>
-        <p class="form-note">Your information is used only to respond to your enquiry.</p>
-      </form>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <header class="site-header">
+        <a class="logo" href="index.html">GLORD <span>GADGETS</span></a>
+        <button id="menu" class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="phones.html">Phones</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-page-intro">
+            <p class="eyebrow">WE’RE HERE TO HELP</p>
+            <h1>Let’s find the right <em>iPhone.</em></h1>
+            <p>Ask us about current prices, storage options, device condition, warranty, and availability.</p>
+        </section>
+        <section class="contact-page-content section-wrap" aria-label="Contact information">
+            <div class="contact-page-copy">
+                <p class="eyebrow">CONTACT GLORD GADGETS</p>
+                <h2>Quick answers.<br><em>Easy ordering.</em></h2>
+                <p>Message us directly and tell us which iPhone model you’re interested in. We’ll confirm the details with you before you order.</p>
+                <a class="text-link" href="phones.html">Browse iPhone models <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="contact-card contact-page-card">
+                <span class="contact-card-mark" aria-hidden="true">GG</span>
+                <span class="contact-label">WHATSAPP / PHONE</span>
+                <a class="contact-number" href="tel:+2349154099158">+234 915 409 9158</a>
+                <p>For current prices and stock, contact us directly on WhatsApp.</p>
+                <a class="button dark-button" href="https://wa.me/2349154099158?text=Hello%20GLORD%20GADGETS%2C%20I%20would%20like%20to%20ask%20about%20your%20iPhones." target="_blank" rel="noopener noreferrer">Message on WhatsApp <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+        <section class="contact-next section-wrap" aria-label="What to include in your message">
+            <p class="eyebrow">MAKE IT EASY</p>
+            <h2>Tell us what you’re looking for.</h2>
+            <div class="contact-next-grid">
+                <article><span>01</span><h3>Model</h3><p>Share the iPhone series or exact model you have in mind.</p></article>
+                <article><span>02</span><h3>Storage</h3><p>Let us know your preferred storage size and any must-have features.</p></article>
+                <article><span>03</span><h3>Availability</h3><p>We’ll confirm current stock, condition, and price with you directly.</p></article>
+            </div>
+        </section>
+    </main>
+    <footer><a class="logo" href="index.html">GLORD <span>GADGETS</span></a><span>© 2026 GLORD GADGETS. All rights reserved.</span></footer>
+    <script src="script.js"></script>
 </body>
 </html>

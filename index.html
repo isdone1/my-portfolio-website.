@@ -3,132 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISDONE WEB | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Discover Regard Confidential Hotel and Suites. Explore rooms, amenities, and contact the hotel to enquire about your stay.">
+  <title>Regard Confidential Hotel & Suites</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="brand" aria-label="Ndukwe portfolio brand">
-      <div class="brand-icon">N</div>
-      <div>
-        <div class="brand-name">ISDONE<span>WEB</span></div>
-        <div class="tagline">DESIGN / DEVELOP</div>
-      </div>
-    </div>
-
-    <button class="menu" id="menuButton" aria-label="Open menu" aria-expanded="false">
-      <i></i><i></i><i></i>
-    </button>
+    <a class="brand" href="#home" aria-label="Regard Confidential Hotel home">
+      <span class="brand-mark">R</span>
+      <span><strong>REGARD CONFIDENTIAL</strong><small>HOTEL & SUITES</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#rooms">Rooms & Suites</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#about">About</a>
+      <a class="nav-book" href="#booking">Enquire now</a>
+    </nav>
   </header>
 
-  <nav id="mobileNav" class="mobile-nav" aria-label="Main mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="result.html">Work</a>
-    <a href="features.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">COMFORT • PRIVACY • HOSPITALITY</p>
+        <h1>Your quiet escape.<br><em>Your comfort, our priority.</em></h1>
+        <p class="hero-copy">Settle in, slow down, and enjoy a welcoming stay at Regard Confidential Hotel and Suites.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#booking">Enquire about a stay <span>↗</span></a>
+          <a class="text-link" href="#rooms">Explore our rooms ↓</a>
+        </div>
+      </div>
+      <div class="hero-note"><span class="dot"></span> A warm welcome awaits</div>
+    </section>
 
-  <main id="home" class="page-shell">
-    <section class="hero">
-      <div class="badge">AI • DESIGN • DIGITAL SYSTEMS</div>
+    <section class="booking-strip" id="booking">
+      <div><span class="field-label">Planning a stay?</span><strong>Let's help you find your room.</strong></div>
+      <form id="bookingForm" class="booking-form">
+        <label>Check-in <input type="date" id="checkin" required></label>
+        <label>Check-out <input type="date" id="checkout" required></label>
+        <label>Guests
+          <select id="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select>
+        </label>
+        <button class="button button-dark" type="submit">Enquire <span>↗</span></button>
+      </form>
+      <p class="form-note">This form prepares an enquiry; your reservation is not confirmed until the hotel confirms it.</p>
+    </section>
 
-      <h1>Student developer building AI-powered digital experiences <em>for the future.</em></h1>
+    <section class="section rooms-section" id="rooms">
+      <div class="section-heading">
+        <div><p class="eyebrow">STAY A LITTLE LONGER</p><h2>Rooms made for <em>unwinding.</em></h2></div>
+        <p>Find a space to relax, recharge, and make yourself at home.</p>
+      </div>
+      <div class="room-grid">
+        <article class="room-card">
+          <div class="room-image room-one"><span class="image-tag">Comfort</span></div>
+          <div class="room-details"><div><h3>Standard Room</h3><p>A simple, welcoming place to rest.</p></div><span class="room-arrow">↗</span></div>
+          <button class="room-enquire" data-room="Standard Room">Enquire about this room</button>
+        </article>
+        <article class="room-card">
+          <div class="room-image room-two"><span class="image-tag">Relax</span></div>
+          <div class="room-details"><div><h3>Deluxe Room</h3><p>Extra comfort for a restful stay.</p></div><span class="room-arrow">↗</span></div>
+          <button class="room-enquire" data-room="Deluxe Room">Enquire about this room</button>
+        </article>
+        <article class="room-card">
+          <div class="room-image room-three"><span class="image-tag">More space</span></div>
+          <div class="room-details"><div><h3>Suite</h3><p>A spacious option for added privacy.</p></div><span class="room-arrow">↗</span></div>
+          <button class="room-enquire" data-room="Suite">Enquire about this room</button>
+        </article>
+      </div>
+      <p class="disclaimer">Room categories are sample placeholders. Confirm actual room types, photos, features, and rates with the hotel before publishing.</p>
+    </section>
 
-      <p class="hero-copy">
-        I’m a student at EBSU, Ebonyi, building modern digital experiences with AI, branding, and smart web design to help businesses grow and ideas become real.
-      </p>
-
-      <div class="actions">
-        <a class="btn primary" href="result.html">VIEW MY WORK <span>→</span></a>
-        <a class="btn secondary" href="contact.html">HIRE ME</a>
+    <section class="amenities" id="amenities">
+      <div class="amenities-intro"><p class="eyebrow">THE LITTLE DETAILS</p><h2>Stay comfortably.<br><em>Feel at home.</em></h2><p>We want your time with us to feel easy from arrival to checkout.</p></div>
+      <div class="amenity-list">
+        <div><span>01</span><strong>Welcoming hospitality</strong><p>Friendly service throughout your stay.</p></div>
+        <div><span>02</span><strong>Comfortable rooms</strong><p>A place to relax and recharge.</p></div>
+        <div><span>03</span><strong>Easy enquiries</strong><p>Contact the hotel about dates and room options.</p></div>
       </div>
     </section>
 
-    <section id="results" class="stats" aria-label="Personal highlights">
-      <div class="stat">
-        <strong>3+</strong>
-        <span>YEARS OF DESIGN</span>
-      </div>
-      <div class="stat">
-        <strong class="white">15+</strong>
-        <span>PROJECTS</span>
-      </div>
-      <div class="stat">
-        <strong>100%</strong>
-        <span>CUSTOM WORK</span>
-      </div>
+    <section class="about-section section" id="about">
+      <div class="about-image"></div>
+      <div class="about-copy"><p class="eyebrow">WELCOME TO REGARD CONFIDENTIAL</p><h2>A stay that puts <em>you first.</em></h2><p>Whether you are visiting for business or taking a break, Regard Confidential Hotel and Suites is ready to hear what you need for your stay.</p><p>Get in touch to ask about availability, current rates, facilities, and directions.</p><a class="button button-dark" href="#booking">Plan your visit <span>↗</span></a></div>
     </section>
 
-    <section class="about-summary" aria-label="About summary">
-      <div class="about-summary-text">
-        <span class="section-label">ABOUT ME</span>
-        <h2>I’m Ndukwe Isdone Chukwuenye, a student at EBSU, Ebonyi, building a future in AI, design, and digital product development.</h2>
-        <p>
-          I combine learning, creativity, and technology to build intelligent digital experiences that help brands grow, communicate better, and stand out online.
-        </p>
-      </div>
-    </section>
-
-    <section id="features" class="features-grid" aria-label="Portfolio skills">
-      <article class="card">
-        <div class="card-icon">◉</div>
-        <h2>AI UX Strategy</h2>
-        <p>Thoughtful product experiences designed to feel intuitive, smart, and easy for customers to trust and act on.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">◌</div>
-        <h2>Web Systems</h2>
-        <p>Responsive websites built with clean architecture, modern front-end structure, and scalable digital workflows.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">✎</div>
-        <h2>Brand Intelligence</h2>
-        <p>Visual identity systems that communicate your value clearly and position your brand as modern and credible.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">●</div>
-        <h2>AI Communication</h2>
-        <p>Clear, persuasive messaging and digital experiences that connect automation with human-centered brand storytelling.</p>
-      </article>
+    <section class="contact-band">
+      <div><p class="eyebrow">READY WHEN YOU ARE</p><h2>Let's plan your next stay.</h2><p>Send an enquiry and the hotel can help you with the next steps.</p></div>
+      <a class="button button-gold" href="#booking">Make an enquiry <span>↗</span></a>
     </section>
   </main>
 
-  <section class="contact-box" id="contact">
-    <h2>Let’s create something meaningful together.</h2>
-    <a class="btn primary" href="mailto:ndukweisdone@gmail.com">CONTACT ME →</a>
-  </section>
-
-  <button class="ai-toggle" id="aiToggle" aria-label="Open AI assistant" aria-expanded="false">AI</button>
-
-  <aside class="ai-panel" id="aiPanel" aria-live="polite" aria-label="AI assistant chat panel">
-    <div class="ai-header">
-      <div>
-        <span class="ai-badge">ISDONE AI</span>
-        <h3>Ask anything</h3>
-      </div>
-      <button class="ai-close" id="aiClose" aria-label="Close AI assistant">×</button>
-    </div>
-
-    <div class="ai-messages" id="aiMessages">
-      <div class="message bot">
-        Hi! I can answer questions about websites, branding, design, pricing, and project timelines.
-      </div>
-    </div>
-
-    <form class="ai-form" id="aiForm">
-      <label class="sr-only" for="aiInput">Ask a question</label>
-      <input id="aiInput" name="question" type="text" placeholder="Ask about pricing, services, timelines..." autocomplete="off" />
-      <button type="submit">Send</button>
-    </form>
-  </aside>
-
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span><strong>REGARD CONFIDENTIAL</strong><small>HOTEL & SUITES</small></span></a>
+    <p>Comfort • Privacy • Hospitality</p>
+    <p class="copyright">© <span id="year"></span> Regard Confidential Hotel and Suites. All rights reserved.</p>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>
-
