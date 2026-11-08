@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISDONE WEB | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand" aria-label="Ndukwe portfolio brand">
+      <div class="brand-icon">N</div>
+      <div>
+        <div class="brand-name">ISDONE<span>WEB</span></div>
+        <div class="tagline">DESIGN / DEVELOP</div>
+      </div>
+    </div>
+
+    <button class="menu" id="menuButton" aria-label="Open menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+  </header>
+
+  <nav id="mobileNav" class="mobile-nav" aria-label="Main mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="result.html">Work</a>
+    <a href="features.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main id="home" class="page-shell">
+    <section class="hero">
+      <div class="badge">AI • DESIGN • DIGITAL SYSTEMS</div>
+
+      <h1>Student developer building AI-powered digital experiences <em>for the future.</em></h1>
+
+      <p class="hero-copy">
+        I’m a student at EBSU, Ebonyi, building modern digital experiences with AI, branding, and smart web design to help businesses grow and ideas become real.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="result.html">VIEW MY WORK <span>→</span></a>
+        <a class="btn secondary" href="contact.html">HIRE ME</a>
+      </div>
+    </section>
+
+    <section id="results" class="stats" aria-label="Personal highlights">
+      <div class="stat">
+        <strong>3+</strong>
+        <span>YEARS OF DESIGN</span>
+      </div>
+      <div class="stat">
+        <strong class="white">15+</strong>
+        <span>PROJECTS</span>
+      </div>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>CUSTOM WORK</span>
+      </div>
+    </section>
+
+    <section class="about-summary" aria-label="About summary">
+      <div class="about-summary-text">
+        <span class="section-label">ABOUT ME</span>
+        <h2>I’m Ndukwe Isdone Chukwuenye, a student at EBSU, Ebonyi, building a future in AI, design, and digital product development.</h2>
+        <p>
+          I combine learning, creativity, and technology to build intelligent digital experiences that help brands grow, communicate better, and stand out online.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="features-grid" aria-label="Portfolio skills">
+      <article class="card">
+        <div class="card-icon">◉</div>
+        <h2>AI UX Strategy</h2>
+        <p>Thoughtful product experiences designed to feel intuitive, smart, and easy for customers to trust and act on.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">◌</div>
+        <h2>Web Systems</h2>
+        <p>Responsive websites built with clean architecture, modern front-end structure, and scalable digital workflows.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">✎</div>
+        <h2>Brand Intelligence</h2>
+        <p>Visual identity systems that communicate your value clearly and position your brand as modern and credible.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">●</div>
+        <h2>AI Communication</h2>
+        <p>Clear, persuasive messaging and digital experiences that connect automation with human-centered brand storytelling.</p>
+      </article>
+    </section>
+  </main>
+
+  <section class="contact-box" id="contact">
+    <h2>Let’s create something meaningful together.</h2>
+    <a class="btn primary" href="mailto:ndukweisdone@gmail.com">CONTACT ME →</a>
+  </section>
+
+  <button class="ai-toggle" id="aiToggle" aria-label="Open AI assistant" aria-expanded="false">AI</button>
+
+  <aside class="ai-panel" id="aiPanel" aria-live="polite" aria-label="AI assistant chat panel">
+    <div class="ai-header">
+      <div>
+        <span class="ai-badge">ISDONE AI</span>
+        <h3>Ask anything</h3>
+      </div>
+      <button class="ai-close" id="aiClose" aria-label="Close AI assistant">×</button>
+    </div>
+
+    <div class="ai-messages" id="aiMessages">
+      <div class="message bot">
+        Hi! I can answer questions about websites, branding, design, pricing, and project timelines.
+      </div>
+    </div>
+
+    <form class="ai-form" id="aiForm">
+      <label class="sr-only" for="aiInput">Ask a question</label>
+      <input id="aiInput" name="question" type="text" placeholder="Ask about pricing, services, timelines..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

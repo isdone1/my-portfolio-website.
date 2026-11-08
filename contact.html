@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ISDONE WEB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-icon">N</div>
+      <div>
+        <div class="brand-name">ISDONE<span>WEB</span></div>
+        <div class="tagline">DESIGN / DEVELOP</div>
+      </div>
+    </div>
+
+    <button class="menu" id="menuButton" aria-label="Open menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+  </header>
+
+  <nav id="mobileNav" class="mobile-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="result.html">Work</a>
+    <a href="features.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">CONTACT</p>
+      <h1>Let’s build something <span>great together.</span></h1>
+      <p>
+        If you need a website that looks professional, feels polished, and helps your business stand out, ISDONE WEB is ready to help.
+      </p>
+    </section>
+
+    <section class="contact-panel">
+      <form class="contact-form" action="https://formsubmit.co/ndukweisdone@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Portfolio enquiry from website">
+
+        <div class="form-row">
+          <label for="name">FULL NAME</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">EMAIL ADDRESS</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="project">PROJECT TYPE</label>
+          <select id="project" name="project" required>
+            <option value="">Select project type</option>
+            <option>Portfolio Website</option>
+            <option>Business Website</option>
+            <option>Landing Page</option>
+            <option>Brand Design</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">PROJECT DETAILS</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea, goals, and what you want the website to do..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary submit-btn">SEND ENQUIRY <span>→</span></button>
+        <p class="form-note">Your information is used only to respond to your enquiry.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
